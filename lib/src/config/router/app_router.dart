@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import '../../presentation/views/second_screen/second_screen.dart';
 import '../../presentation/views/home/homepage.dart';
 
 part 'app_router.gr.dart';
@@ -11,7 +12,8 @@ class AppRouter extends _$AppRouter {
 
   @override
   final List<AutoRoute> routes = [
-    AutoRoute(page: HomeRoute.page, initial: true, path: 'home'),
+    AutoRoute(page: HomeRoute.page, initial: true, path: '/home'),
+    AutoRoute(page: SecondRoute.page, path: '/second'),
     // AutoRoute(page: MyHomePage, initial: true),
   ];
 }
